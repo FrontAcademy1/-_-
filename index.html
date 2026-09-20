@@ -7,6 +7,7 @@
 <title>MY QUESTION ARCHIVE</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <style>
@@ -47,8 +48,7 @@ body:before{
   pointer-events:none;
   z-index:999;
   opacity:.055;
-  background-image:
-    radial-gradient(#fff 1px,transparent 1px);
+  background-image:radial-gradient(#fff 1px,transparent 1px);
   background-size:5px 5px;
 }
 
@@ -58,10 +58,6 @@ textarea,
 select{
   font-family:inherit;
 }
-
-/* =========================
-   GENERAL
-========================= */
 
 .hidden{
   display:none!important;
@@ -82,12 +78,7 @@ select{
 .rule{
   height:1px;
   border:0;
-  background:linear-gradient(
-    90deg,
-    transparent,
-    #806b4b,
-    transparent
-  );
+  background:linear-gradient(90deg,transparent,#806b4b,transparent);
   margin:22px 0;
 }
 
@@ -118,12 +109,7 @@ textarea.field{
 
 .btn{
   border:1px solid #806a49;
-  background:
-    linear-gradient(
-      180deg,
-      #33291e,
-      #211a13
-    );
+  background:linear-gradient(180deg,#33291e,#211a13);
   color:#eadcc3;
   padding:11px 17px;
   cursor:pointer;
@@ -141,9 +127,7 @@ textarea.field{
   cursor:not-allowed;
 }
 
-/* =========================
-   LOGIN
-========================= */
+/* LOGIN */
 
 .gate{
   position:fixed;
@@ -152,14 +136,8 @@ textarea.field{
   display:grid;
   place-items:center;
   padding:20px;
-
   background:
-    radial-gradient(
-      circle at center,
-      rgba(54,44,32,.96),
-      rgba(9,8,6,.99) 72%
-    );
-
+    radial-gradient(circle at center,rgba(54,44,32,.96),rgba(9,8,6,.99) 72%);
   overflow:auto;
 }
 
@@ -167,21 +145,12 @@ textarea.field{
   width:min(470px,100%);
   position:relative;
   padding:42px 36px 35px;
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(28,23,18,.98),
-      rgba(13,11,9,.99)
-    );
-
+  background:linear-gradient(145deg,rgba(28,23,18,.98),rgba(13,11,9,.99));
   border:1px solid #705c40;
-
   box-shadow:
     0 25px 80px rgba(0,0,0,.8),
     0 0 0 6px rgba(26,21,16,.9),
     inset 0 0 40px rgba(0,0,0,.3);
-
   text-align:center;
 }
 
@@ -212,17 +181,13 @@ textarea.field{
   width:70px;
   height:70px;
   margin:0 auto 18px;
-
   display:flex;
   align-items:center;
   justify-content:center;
-
   border:1px solid #806a49;
   color:#c2a775;
-
   font-family:Cinzel,serif;
   font-size:25px;
-
   box-shadow:
     inset 0 0 20px rgba(0,0,0,.5),
     0 0 20px rgba(0,0,0,.25);
@@ -265,26 +230,14 @@ textarea.field{
   width:100%;
   min-height:48px;
   margin-top:5px;
-
   font-family:Cinzel,Cairo,serif;
   letter-spacing:2px;
   font-weight:600;
-
-  background:
-    linear-gradient(
-      180deg,
-      #51402c,
-      #2c2117
-    );
+  background:linear-gradient(180deg,#51402c,#2c2117);
 }
 
 .login-btn:hover{
-  background:
-    linear-gradient(
-      180deg,
-      #665138,
-      #392a1d
-    );
+  background:linear-gradient(180deg,#665138,#392a1d);
 }
 
 .login-status{
@@ -303,16 +256,13 @@ textarea.field{
   letter-spacing:2px;
 }
 
-/* =========================
-   NAV
-========================= */
+/* NAV */
 
 .nav{
   display:flex;
   justify-content:space-between;
   gap:15px;
   align-items:center;
-
   border-bottom:1px solid #4d402f;
   padding:10px 0 16px;
 }
@@ -336,9 +286,7 @@ textarea.field{
   color:#e2c99b;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
   text-align:center;
@@ -360,9 +308,7 @@ textarea.field{
   line-height:2;
 }
 
-/* =========================
-   QUESTIONS
-========================= */
+/* QUESTIONS */
 
 .toolbar{
   display:grid;
@@ -372,30 +318,18 @@ textarea.field{
 
 .grid{
   display:grid;
-  grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:20px;
   margin-top:20px;
 }
 
 .paper{
   position:relative;
-  background:
-    linear-gradient(
-      145deg,
-      var(--paper),
-      var(--paper2)
-    );
+  background:linear-gradient(145deg,var(--paper),var(--paper2));
   color:var(--ink);
-
   padding:27px;
-
   border:1px solid #6b5940;
-
-  box-shadow:
-    0 15px 45px #0009,
-    0 0 0 6px #1b1712;
-
+  box-shadow:0 15px 45px #0009,0 0 0 6px #1b1712;
   overflow:hidden;
 }
 
@@ -451,26 +385,14 @@ pre{
   margin-top:12px;
 }
 
-/* =========================
-   PANELS
-========================= */
+/* PANELS */
 
 .panel{
   margin:30px 0;
   padding:24px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #1b1611,
-      #12100d
-    );
-
+  background:linear-gradient(145deg,#1b1611,#12100d);
   border:1px solid var(--line);
-
-  box-shadow:
-    0 15px 45px #0009,
-    0 0 0 6px #1b1712;
+  box-shadow:0 15px 45px #0009,0 0 0 6px #1b1712;
 }
 
 .panel h2{
@@ -483,17 +405,13 @@ pre{
   color:#c5ae84;
 }
 
-/* =========================
-   CHAT
-========================= */
+/* CHAT */
 
 .messages{
   height:360px;
   overflow:auto;
-
   background:#0b0a08;
   border:1px solid #4d402f;
-
   padding:10px;
 }
 
@@ -516,9 +434,7 @@ pre{
   color:#786b5a;
 }
 
-/* =========================
-   ADMIN
-========================= */
+/* ADMIN */
 
 .admin-grid{
   display:grid;
@@ -537,29 +453,21 @@ pre{
   background:#100e0b;
 }
 
-/* =========================
-   TOAST
-========================= */
+/* TOAST */
 
 .toast{
   position:fixed;
   bottom:20px;
   left:20px;
-
   background:#211b14;
   color:#eadcc3;
-
   border:1px solid #806a49;
-
   padding:11px 16px;
-
   z-index:300;
   box-shadow:0 10px 30px #0009;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:700px){
 
@@ -612,9 +520,7 @@ pre{
 
 <body>
 
-<!-- =========================
-     LOGIN
-========================= -->
+<!-- LOGIN -->
 
 <div id="gate" class="gate">
 
@@ -665,6 +571,7 @@ pre{
       <button
         id="loginBtn"
         class="btn login-btn"
+        type="button"
         onclick="login()"
       >
         ENTER ARCHIVE
@@ -683,9 +590,7 @@ pre{
 </div>
 
 
-<!-- =========================
-     MAIN APP
-========================= -->
+<!-- APPLICATION -->
 
 <main id="app" class="wrap hidden">
 
@@ -712,6 +617,7 @@ pre{
       <button
         id="adminBtn"
         class="btn hidden"
+        type="button"
         onclick="openAdmin()"
       >
         ADMIN
@@ -719,6 +625,7 @@ pre{
 
       <button
         class="btn"
+        type="button"
         onclick="logout()"
       >
         خروج
@@ -728,8 +635,6 @@ pre{
 
   </nav>
 
-
-  <!-- HERO -->
 
   <section class="hero">
 
@@ -758,15 +663,15 @@ pre{
         id="search"
         class="field"
         placeholder="ابحث في الأسئلة..."
-        oninput="render()"
       >
 
       <select
         id="cat"
         class="field"
-        onchange="render()"
       >
-        <option>ALL</option>
+        <option value="ALL">
+          ALL
+        </option>
       </select>
 
     </div>
@@ -799,8 +704,9 @@ pre{
       >
 
       <button
+        id="sendChatBtn"
         class="btn"
-        onclick="sendChat()"
+        type="button"
       >
         إرسال
       </button>
@@ -835,6 +741,7 @@ pre{
 
       <button
         class="btn"
+        type="button"
         onclick="tab('qa')"
       >
         الأسئلة
@@ -842,6 +749,7 @@ pre{
 
       <button
         class="btn"
+        type="button"
         onclick="tab('ca')"
       >
         الشات
@@ -849,6 +757,7 @@ pre{
 
       <button
         class="btn"
+        type="button"
         onclick="tab('sa')"
       >
         الإعدادات
@@ -857,7 +766,7 @@ pre{
     </div>
 
 
-    <!-- ADMIN QUESTIONS -->
+    <!-- QUESTIONS ADMIN -->
 
     <div id="qa">
 
@@ -922,8 +831,9 @@ pre{
       </div>
 
       <button
+        id="publishBtn"
         class="btn"
-        onclick="addQ()"
+        type="button"
       >
         نشر السؤال
       </button>
@@ -963,8 +873,9 @@ pre{
         >
 
         <button
+          id="adminSendBtn"
           class="btn"
-          onclick="adminSend()"
+          type="button"
         >
           إرسال
         </button>
@@ -1018,8 +929,9 @@ pre{
       </div>
 
       <button
+        id="saveBtn"
         class="btn"
-        onclick="saveSet()"
+        type="button"
       >
         حفظ
       </button>
@@ -1031,16 +943,13 @@ pre{
 </main>
 
 
-<div
-  id="toast"
-  class="toast hidden"
-></div>
+<div id="toast" class="toast hidden"></div>
 
 
 <script>
 
 /* =========================================
-   SUPABASE
+   SUPABASE CONFIG
 ========================================= */
 
 const SUPABASE_URL =
@@ -1049,33 +958,40 @@ const SUPABASE_URL =
 const SUPABASE_KEY =
   "sb_publishable_wy00yrCOLiMt3iyrcfH57w_qFE-Ko7h";
 
-const sb = supabase.createClient(
-  SUPABASE_URL,
-  SUPABASE_KEY
-);
+const sb =
+  window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
 
 
 /* =========================================
-   APP STATE
+   STATE
 ========================================= */
 
 let me = null;
 let token = "";
 let qs = [];
 let settings = {};
+let loginBusy = false;
+let chatBusy = false;
+
+
+/* =========================================
+   HELPERS
+========================================= */
 
 const $ = (id) =>
   document.getElementById(id);
 
 
-/* =========================================
-   HTML ESCAPE
-========================================= */
+function esc(value){
 
-const esc = (value) =>
-  String(value ?? "").replace(
+  return String(
+    value ?? ""
+  ).replace(
     /[&<>"']/g,
-    (char) => ({
+    char => ({
       "&":"&amp;",
       "<":"&lt;",
       ">":"&gt;",
@@ -1083,27 +999,44 @@ const esc = (value) =>
       "'":"&#39;"
     }[char])
   );
+}
 
 
 /* =========================================
-   EDGE FUNCTION
+   EDGE FUNCTION CALL
+   IMPORTANT:
+   TOKEN IS SENT IN BOTH:
+   BODY + AUTHORIZATION HEADER
 ========================================= */
 
-async function fn(name, body){
+async function fn(name, body = {}){
 
-  const { data, error } =
+  const headers = {};
+
+  if(body && body.token){
+
+    headers.Authorization =
+      `Bearer ${body.token}`;
+  }
+
+
+  const result =
     await sb.functions.invoke(
       name,
       {
-        body
+        body,
+        headers
       }
     );
 
-  if(error){
-    throw error;
+
+  if(result.error){
+
+    throw result.error;
   }
 
-  return data;
+
+  return result.data;
 }
 
 
@@ -1113,16 +1046,23 @@ async function fn(name, body){
 
 function toast(message){
 
-  $("toast").textContent = message;
+  const element =
+    $("toast");
 
-  $("toast").classList.remove(
+  element.textContent =
+    message;
+
+  element.classList.remove(
     "hidden"
   );
 
+
   setTimeout(() => {
-    $("toast").classList.add(
+
+    element.classList.add(
       "hidden"
     );
+
   },2200);
 }
 
@@ -1131,13 +1071,12 @@ function toast(message){
    LOGIN
 ========================================= */
 
-let loggingIn = false;
-
 async function login(){
 
-  if(loggingIn){
+  if(loginBusy){
     return;
   }
+
 
   const username =
     $("user").value.trim();
@@ -1145,7 +1084,9 @@ async function login(){
   const password =
     $("pass").value;
 
+
   $("err").textContent = "";
+
 
   if(!username || !password){
 
@@ -1155,7 +1096,9 @@ async function login(){
     return;
   }
 
-  loggingIn = true;
+
+  loginBusy = true;
+
 
   const button =
     $("loginBtn");
@@ -1164,6 +1107,7 @@ async function login(){
 
   button.textContent =
     "CHECKING...";
+
 
   try{
 
@@ -1176,6 +1120,7 @@ async function login(){
         }
       );
 
+
     if(!data?.ok){
 
       throw new Error(
@@ -1184,8 +1129,21 @@ async function login(){
       );
     }
 
-    me = data.user;
-    token = data.token;
+
+    me =
+      data.user;
+
+    token =
+      data.token;
+
+
+    if(!me || !token){
+
+      throw new Error(
+        "لم يتم إنشاء جلسة دخول."
+      );
+    }
+
 
     localStorage.setItem(
       "aq_session",
@@ -1195,6 +1153,7 @@ async function login(){
       })
     );
 
+
     $("gate").classList.add(
       "hidden"
     );
@@ -1203,16 +1162,23 @@ async function login(){
       "hidden"
     );
 
+
     $("adminBtn").classList.toggle(
       "hidden",
       !me.is_admin
     );
 
+
     await load();
+
 
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Login error:",
+      error
+    );
+
 
     $("err").textContent =
       error?.message ||
@@ -1220,9 +1186,10 @@ async function login(){
 
     $("pass").value = "";
 
+
   }finally{
 
-    loggingIn = false;
+    loginBusy = false;
 
     button.disabled = false;
 
@@ -1233,26 +1200,32 @@ async function login(){
 
 
 /* =========================================
-   LOGIN ENTER KEY
+   ENTER TO LOGIN
 ========================================= */
 
 $("user").addEventListener(
   "keydown",
-  (event) => {
+  event => {
+
     if(event.key === "Enter"){
       login();
     }
+
   }
 );
 
+
 $("pass").addEventListener(
   "keydown",
-  (event) => {
+  event => {
+
     if(event.key === "Enter"){
       login();
     }
+
   }
 );
+
 
 $("user").addEventListener(
   "input",
@@ -1260,6 +1233,7 @@ $("user").addEventListener(
     $("err").textContent = "";
   }
 );
+
 
 $("pass").addEventListener(
   "input",
@@ -1284,7 +1258,7 @@ function logout(){
 
 
 /* =========================================
-   LOAD SITE
+   LOAD
 ========================================= */
 
 async function load(){
@@ -1298,22 +1272,36 @@ async function load(){
         .eq("id",1)
         .maybeSingle();
 
+
+    if(settingsResponse.error){
+
+      console.error(
+        settingsResponse.error
+      );
+
+    }
+
+
     if(settingsResponse.data){
 
       settings =
         settingsResponse.data;
 
+
       $("siteName").textContent =
         settings.site_name ||
         "MY QUESTION ARCHIVE";
+
 
       $("desc").textContent =
         settings.home_description ||
         "";
 
+
       $("gateDesc").textContent =
         settings.gate_description ||
         "أدخل اسم المستخدم وكلمة المرور للوصول إلى الأرشيف.";
+
 
       renderContact();
     }
@@ -1331,6 +1319,19 @@ async function load(){
           }
         );
 
+
+    if(questionsResponse.error){
+
+      console.error(
+        questionsResponse.error
+      );
+
+      toast(
+        "تعذر تحميل الأسئلة."
+      );
+    }
+
+
     qs =
       questionsResponse.data || [];
 
@@ -1346,7 +1347,7 @@ async function load(){
 
 
     $("cat").innerHTML =
-      "<option>ALL</option>" +
+      `<option value="ALL">ALL</option>` +
       categories
         .map(
           category =>
@@ -1357,7 +1358,9 @@ async function load(){
 
     render();
 
+
     await loadChat();
+
 
     if(me?.is_admin){
 
@@ -1365,15 +1368,34 @@ async function load(){
 
     }
 
+
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Load error:",
+      error
+    );
 
     toast(
-      "حدث خطأ أثناء تحميل الأرشيف."
+      "حدث خطأ أثناء تحميل الموقع."
     );
   }
 }
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+$("search").addEventListener(
+  "input",
+  render
+);
+
+$("cat").addEventListener(
+  "change",
+  render
+);
 
 
 /* =========================================
@@ -1387,6 +1409,7 @@ function render(){
       .toLowerCase()
       .trim();
 
+
   const category =
     $("cat").value;
 
@@ -1394,119 +1417,136 @@ function render(){
   const filtered =
     qs.filter(q => {
 
-      const matchesCategory =
+      const categoryMatch =
         category === "ALL" ||
         q.category === category;
 
-      const text =
-        (
-          q.title +
-          " " +
-          q.question_text +
-          " " +
-          q.answer +
-          " " +
-          q.explanation
-        ).toLowerCase();
+
+      const searchable =
+        [
+          q.title,
+          q.question_text,
+          q.answer,
+          q.explanation,
+          q.category
+        ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+
 
       return (
-        matchesCategory &&
-        text.includes(search)
+        categoryMatch &&
+        searchable.includes(search)
       );
+
     });
 
 
-  $("grid").innerHTML =
-    filtered.map(q => `
+  if(!filtered.length){
 
-      <article class="paper">
-
-        <div class="meta">
-          ${esc(q.category)}
-        </div>
-
-        <h3>
-          ${esc(q.title)}
-        </h3>
-
-        <div class="question">
-          ${esc(q.question_text)}
-        </div>
-
-        ${
-          q.image_url
-          ? `
-            <img
-              src="${esc(q.image_url)}"
-              alt="Question image"
-            >
-          `
-          : ""
-        }
-
-        ${
-          q.video_url
-          ? `
-            <video
-              controls
-              src="${esc(q.video_url)}"
-            ></video>
-          `
-          : ""
-        }
-
-        ${
-          q.code_content
-          ? `
-            <pre>${esc(q.code_content)}</pre>
-          `
-          : ""
-        }
-
-        <div>
-          <b>ANSWER</b>
-          <p>${esc(q.answer)}</p>
-        </div>
-
-        <div>
-          <b>EXPLANATION</b>
-          <p>${esc(q.explanation)}</p>
-        </div>
-
-        <div class="actions">
-
-          <button
-            class="btn"
-            onclick='copyQuestion(${JSON.stringify(q.question_text)})'
-          >
-            نسخ السؤال
-          </button>
-
-          <button
-            class="btn"
-            onclick="report(${q.id})"
-          >
-            تبليغ
-          </button>
-
-        </div>
-
-      </article>
-
-    `).join("")
-
-    ||
-
-    `
+    $("grid").innerHTML = `
       <div class="paper">
         لا توجد أسئلة مطابقة للبحث.
       </div>
     `;
+
+    return;
+  }
+
+
+  $("grid").innerHTML =
+    filtered
+      .map(q => `
+
+        <article class="paper">
+
+          <div class="meta">
+            ${esc(q.category)}
+          </div>
+
+          <h3>
+            ${esc(q.title)}
+          </h3>
+
+          <div class="question">
+            ${esc(q.question_text)}
+          </div>
+
+          ${
+            q.image_url
+            ? `
+              <img
+                src="${esc(q.image_url)}"
+                alt="Question image"
+              >
+            `
+            : ""
+          }
+
+          ${
+            q.video_url
+            ? `
+              <video
+                controls
+                preload="metadata"
+                src="${esc(q.video_url)}"
+              ></video>
+            `
+            : ""
+          }
+
+          ${
+            q.code_content
+            ? `
+              <pre>${esc(q.code_content)}</pre>
+            `
+            : ""
+          }
+
+          <div>
+            <b>ANSWER</b>
+            <p>
+              ${esc(q.answer)}
+            </p>
+          </div>
+
+          <div>
+            <b>EXPLANATION</b>
+            <p>
+              ${esc(q.explanation)}
+            </p>
+          </div>
+
+          <div class="actions">
+
+            <button
+              class="btn"
+              type="button"
+              onclick='copyQuestion(${JSON.stringify(q.question_text || "")})'
+            >
+              نسخ السؤال
+            </button>
+
+            <button
+              class="btn"
+              type="button"
+              onclick="report(${Number(q.id)})"
+            >
+              تبليغ
+            </button>
+
+          </div>
+
+        </article>
+
+      `)
+      .join("");
 }
 
 
 /* =========================================
-   COPY QUESTION
+   COPY
 ========================================= */
 
 async function copyQuestion(text){
@@ -1517,9 +1557,13 @@ async function copyQuestion(text){
       text
     );
 
-    toast("تم نسخ السؤال");
+    toast(
+      "تم نسخ السؤال."
+    );
 
-  }catch{
+  }catch(error){
+
+    console.error(error);
 
     toast(
       "تعذر نسخ السؤال."
@@ -1539,36 +1583,51 @@ async function report(id){
       "اكتب المشكلة التي تريد الإبلاغ عنها:"
     );
 
+
   if(!message){
     return;
   }
 
-  const response =
-    await sb
-      .from("reports")
-      .insert({
-        question_id:id,
-        username:me.username,
-        message
-      });
 
-  if(response.error){
+  try{
+
+    const result =
+      await sb
+        .from("reports")
+        .insert({
+          question_id:id,
+          username:me?.username || "",
+          message:message.trim()
+        });
+
+
+    if(result.error){
+
+      throw result.error;
+    }
+
+
+    toast(
+      "تم إرسال البلاغ."
+    );
+
+
+  }catch(error){
+
+    console.error(
+      "Report error:",
+      error
+    );
 
     toast(
       "تعذر إرسال البلاغ."
     );
-
-    return;
   }
-
-  toast(
-    "تم إرسال البلاغ."
-  );
 }
 
 
 /* =========================================
-   STUDENT CHAT
+   CHAT LOAD
 ========================================= */
 
 async function loadChat(){
@@ -1584,20 +1643,41 @@ async function loadChat(){
         }
       );
 
+
+    if(!data?.ok){
+
+      throw new Error(
+        data?.error ||
+        "تعذر تحميل المحادثة."
+      );
+    }
+
+
     renderMsgs(
       $("messages"),
-      data?.messages || []
+      data.messages || []
     );
+
 
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Chat load error:",
+      error
+    );
+
 
     $("messages").innerHTML =
-      "تعذر تحميل المحادثة.";
+      `<div style="padding:15px;color:#a98b5e">
+        تعذر تحميل المحادثة.
+      </div>`;
   }
 }
 
+
+/* =========================================
+   RENDER CHAT
+========================================= */
 
 function renderMsgs(
   element,
@@ -1605,13 +1685,20 @@ function renderMsgs(
   admin = false
 ){
 
-  element.innerHTML =
-    messages.map(
-      message => `
+  if(!messages.length){
 
-        <div
-          class="msg ${esc(message.sender_role)}"
-        >
+    element.innerHTML =
+      "لا توجد رسائل.";
+
+    return;
+  }
+
+
+  element.innerHTML =
+    messages
+      .map(message => `
+
+        <div class="msg ${esc(message.sender_role)}">
 
           <small>
             ${esc(message.username)}
@@ -1630,7 +1717,8 @@ function renderMsgs(
             ? `
               <button
                 class="btn"
-                onclick="delChat(${message.id})"
+                type="button"
+                onclick="delChat(${Number(message.id)})"
               >
                 حذف
               </button>
@@ -1640,16 +1728,25 @@ function renderMsgs(
 
         </div>
 
-      `
-    ).join("")
+      `)
+      .join("");
 
-    ||
 
-    "لا توجد رسائل.";
+  element.scrollTop =
+    element.scrollHeight;
 }
 
 
+/* =========================================
+   SEND CHAT
+========================================= */
+
 async function sendChat(){
+
+  if(chatBusy){
+    return;
+  }
+
 
   const input =
     $("chatInput");
@@ -1657,34 +1754,97 @@ async function sendChat(){
   const message =
     input.value.trim();
 
+
   if(!message){
     return;
   }
 
+
+  chatBusy = true;
+
+
+  const button =
+    $("sendChatBtn");
+
+  button.disabled = true;
+
+  button.textContent =
+    "إرسال...";
+
+
   try{
 
-    await fn(
-      "chat",
-      {
-        action:"send",
-        token,
-        message
-      }
-    );
+    const data =
+      await fn(
+        "chat",
+        {
+          action:"send",
+          token,
+          message
+        }
+      );
+
+
+    if(!data?.ok){
+
+      throw new Error(
+        data?.error ||
+        "تعذر إرسال الرسالة."
+      );
+    }
+
 
     input.value = "";
 
     await loadChat();
 
+
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Send chat error:",
+      error
+    );
+
 
     toast(
+      error?.message ||
       "تعذر إرسال الرسالة."
     );
+
+
+  }finally{
+
+    chatBusy = false;
+
+    button.disabled = false;
+
+    button.textContent =
+      "إرسال";
   }
 }
+
+
+/* =========================================
+   ENTER TO SEND CHAT
+========================================= */
+
+$("chatInput").addEventListener(
+  "keydown",
+  event => {
+
+    if(
+      event.key === "Enter" &&
+      !event.shiftKey
+    ){
+
+      event.preventDefault();
+
+      sendChat();
+    }
+
+  }
+);
 
 
 /* =========================================
@@ -1694,6 +1854,7 @@ async function sendChat(){
 function renderContact(){
 
   const links = [];
+
 
   if(settings.whatsapp){
 
@@ -1705,6 +1866,7 @@ function renderContact(){
     `);
   }
 
+
   if(settings.telegram){
 
     links.push(`
@@ -1714,6 +1876,7 @@ function renderContact(){
       </p>
     `);
   }
+
 
   if(settings.email){
 
@@ -1725,15 +1888,15 @@ function renderContact(){
     `);
   }
 
+
   $("contactLinks").innerHTML =
-    links.join("")
-    ||
+    links.join("") ||
     "<p>لا توجد بيانات تواصل حاليًا.</p>";
 }
 
 
 /* =========================================
-   ADMIN
+   ADMIN OPEN
 ========================================= */
 
 function openAdmin(){
@@ -1742,9 +1905,11 @@ function openAdmin(){
     return;
   }
 
+
   $("admin").classList.remove(
     "hidden"
   );
+
 
   $("admin").scrollIntoView({
     behavior:"smooth"
@@ -1752,26 +1917,30 @@ function openAdmin(){
 }
 
 
+/* =========================================
+   ADMIN TABS
+========================================= */
+
 function tab(id){
 
   [
     "qa",
     "ca",
     "sa"
-  ].forEach(
-    section => {
+  ].forEach(section => {
 
-      $(section).classList.toggle(
-        "hidden",
-        section !== id
-      );
+    $(section).classList.toggle(
+      "hidden",
+      section !== id
+    );
 
-    }
-  );
+  });
 
 
   if(id === "ca"){
+
     adminList();
+
   }
 
 
@@ -1805,6 +1974,7 @@ async function adminList(){
     return;
   }
 
+
   try{
 
     const questions =
@@ -1817,41 +1987,47 @@ async function adminList(){
       );
 
 
+    if(!questions?.ok){
+
+      throw new Error(
+        questions?.error ||
+        "تعذر تحميل الأسئلة."
+      );
+    }
+
+
     $("qlist").innerHTML =
-      (questions?.data || [])
-        .map(
-          q => `
+      (questions.data || [])
+        .map(q => `
 
-            <div class="admin-question">
+          <div class="admin-question">
 
-              <strong>
-                ${esc(q.title)}
-              </strong>
+            <strong>
+              ${esc(q.title)}
+            </strong>
 
-              <br>
+            <br>
 
-              <small>
-                ${esc(q.category)}
-              </small>
+            <small>
+              ${esc(q.category)}
+            </small>
 
-              <br><br>
+            <br><br>
 
-              <button
-                class="btn"
-                onclick="delQ(${q.id})"
-              >
-                حذف
-              </button>
+            <button
+              class="btn"
+              type="button"
+              onclick="delQ(${Number(q.id)})"
+            >
+              حذف
+            </button>
 
-            </div>
+          </div>
 
-          `
-        )
-        .join("")
+        `)
+        .join("") ||
 
-        ||
-
-        "<p>لا توجد أسئلة.</p>";
+      "<p>لا توجد أسئلة.</p>";
 
 
     const chat =
@@ -1863,17 +2039,32 @@ async function adminList(){
         }
       );
 
+
+    if(!chat?.ok){
+
+      throw new Error(
+        chat?.error ||
+        "تعذر تحميل الشات."
+      );
+    }
+
+
     renderMsgs(
       $("adminMsgs"),
-      chat?.messages || [],
+      chat.messages || [],
       true
     );
 
+
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Admin list error:",
+      error
+    );
 
     toast(
+      error?.message ||
       "تعذر تحميل لوحة التحكم."
     );
   }
@@ -1930,6 +2121,15 @@ async function addQ(){
   }
 
 
+  const button =
+    $("publishBtn");
+
+  button.disabled = true;
+
+  button.textContent =
+    "جاري النشر...";
+
+
   try{
 
     const data =
@@ -1945,12 +2145,10 @@ async function addQ(){
 
     if(!data?.ok){
 
-      toast(
+      throw new Error(
         data?.error ||
         "تعذر نشر السؤال."
       );
-
-      return;
     }
 
 
@@ -1971,13 +2169,27 @@ async function addQ(){
 
     await load();
 
+
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Add question error:",
+      error
+    );
+
 
     toast(
-      "حدث خطأ أثناء نشر السؤال."
+      error?.message ||
+      "تعذر نشر السؤال."
     );
+
+
+  }finally{
+
+    button.disabled = false;
+
+    button.textContent =
+      "نشر السؤال";
   }
 }
 
@@ -1993,8 +2205,10 @@ async function delQ(id){
       "هل تريد حذف هذا السؤال؟"
     )
   ){
+
     return;
   }
+
 
   try{
 
@@ -2011,11 +2225,10 @@ async function delQ(id){
 
     if(!data?.ok){
 
-      toast(
+      throw new Error(
+        data?.error ||
         "تعذر حذف السؤال."
       );
-
-      return;
     }
 
 
@@ -2023,21 +2236,28 @@ async function delQ(id){
       "تم حذف السؤال."
     );
 
+
     await load();
+
 
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Delete question error:",
+      error
+    );
+
 
     toast(
-      "حدث خطأ أثناء الحذف."
+      error?.message ||
+      "تعذر حذف السؤال."
     );
   }
 }
 
 
 /* =========================================
-   ADMIN CHAT
+   ADMIN SEND CHAT
 ========================================= */
 
 async function adminSend(){
@@ -2050,8 +2270,19 @@ async function adminSend(){
 
 
   if(!username || !message){
+
+    toast(
+      "اكتب اسم الطالب والرسالة."
+    );
+
     return;
   }
+
+
+  const button =
+    $("adminSendBtn");
+
+  button.disabled = true;
 
 
   try{
@@ -2070,11 +2301,10 @@ async function adminSend(){
 
     if(!data?.ok){
 
-      toast(
+      throw new Error(
+        data?.error ||
         "تعذر إرسال الرد."
       );
-
-      return;
     }
 
 
@@ -2082,19 +2312,30 @@ async function adminSend(){
 
     await adminList();
 
+
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Admin chat error:",
+      error
+    );
+
 
     toast(
-      "حدث خطأ أثناء إرسال الرد."
+      error?.message ||
+      "تعذر إرسال الرد."
     );
+
+
+  }finally{
+
+    button.disabled = false;
   }
 }
 
 
 /* =========================================
-   DELETE CHAT MESSAGE
+   DELETE CHAT
 ========================================= */
 
 async function delChat(id){
@@ -2104,6 +2345,7 @@ async function delChat(id){
       "هل تريد حذف هذه الرسالة؟"
     )
   ){
+
     return;
   }
 
@@ -2123,11 +2365,10 @@ async function delChat(id){
 
     if(!data?.ok){
 
-      toast(
+      throw new Error(
+        data?.error ||
         "تعذر حذف الرسالة."
       );
-
-      return;
     }
 
 
@@ -2135,14 +2376,21 @@ async function delChat(id){
       "تم حذف الرسالة."
     );
 
+
     await adminList();
+
 
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Delete chat error:",
+      error
+    );
+
 
     toast(
-      "حدث خطأ أثناء حذف الرسالة."
+      error?.message ||
+      "تعذر حذف الرسالة."
     );
   }
 }
@@ -2174,6 +2422,12 @@ async function saveSet(){
   };
 
 
+  const button =
+    $("saveBtn");
+
+  button.disabled = true;
+
+
   try{
 
     const data =
@@ -2189,12 +2443,10 @@ async function saveSet(){
 
     if(!data?.ok){
 
-      toast(
+      throw new Error(
         data?.error ||
         "تعذر حفظ الإعدادات."
       );
-
-      return;
     }
 
 
@@ -2202,15 +2454,27 @@ async function saveSet(){
       "تم حفظ الإعدادات."
     );
 
+
     await load();
+
 
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "Settings error:",
+      error
+    );
+
 
     toast(
-      "حدث خطأ أثناء حفظ الإعدادات."
+      error?.message ||
+      "تعذر حفظ الإعدادات."
     );
+
+
+  }finally{
+
+    button.disabled = false;
   }
 }
 
@@ -2236,8 +2500,11 @@ async function saveSet(){
       saved?.me
     ){
 
-      me = saved.me;
-      token = saved.token;
+      me =
+        saved.me;
+
+      token =
+        saved.token;
 
 
       $("gate").classList.add(
@@ -2248,6 +2515,7 @@ async function saveSet(){
         "hidden"
       );
 
+
       $("adminBtn").classList.toggle(
         "hidden",
         !me.is_admin
@@ -2257,12 +2525,14 @@ async function saveSet(){
       await load();
     }
 
+
   }catch(error){
 
     console.error(
       "Session restore error:",
       error
     );
+
 
     localStorage.removeItem(
       "aq_session"
